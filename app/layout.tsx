@@ -18,3 +18,7 @@ export default function RootLayout({
     </html>
   )
 }
+export const metadata = {
+  title: 'ATC24 US Airforce - Elite Military Aviation Roleplay',
+  description: 'Experience authentic military aviation roleplay with professional air traffic control and realistic operations.'
+}
