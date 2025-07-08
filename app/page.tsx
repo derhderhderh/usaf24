@@ -6,12 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-import { useEffect } from "react";
 
-function MyPage() {
-  useEffect(() => {
-    document.title = "USAF | ATC24"; // Set the desired title here
-  }, []);
 
 export default function HomePage() {
   return (
@@ -331,4 +326,3 @@ export default function HomePage() {
   )
 }
 
-export default MyPage;
