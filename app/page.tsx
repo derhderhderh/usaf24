@@ -58,8 +58,12 @@ export default function HomePage() {
                     variant="outline"
                     size="lg"
                     className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
+                    asChild
                   >
-                    View Rules
+                    <Link href="https://careers.usaf24.com" target="_blank">
+                      View Careers
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-300">
@@ -93,9 +97,9 @@ export default function HomePage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About ATC24 - USAF</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  ATC24 US Airforce is a premier military aviation roleplay server dedicated to providing the most
-                  realistic and immersive flight simulation experience. Our community brings together aviation
-                  enthusiasts, military personnel, and simulation pilots from around the world.
+                  ATC24 US Airforce is a specialized military aviation department within the larger ATC24 community. We
+                  focus on providing the most realistic and immersive US Air Force roleplay experience, bringing
+                  together aviation enthusiasts, military personnel, and simulation pilots from around the world.
                 </p>
               </div>
             </div>
@@ -234,56 +238,60 @@ export default function HomePage() {
                       1
                     </div>
                     <CardHeader>
-                      <CardTitle>Join Discord & Get Verified</CardTitle>
+                      <CardTitle>Join Main ATC24 Discord</CardTitle>
                       <CardDescription className="text-gray-300">
-                        First, join our Discord community and complete the verification process. This includes reading
-                        our rules, completing orientation, and getting approved by our staff.
+                        First, join the main ATC24 Discord server and complete their verification process. This gives
+                        you access to the broader ATC24 community.
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                        Join Discord
-                        <ExternalLink className="ml-2 h-4 w-4" />
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                        <Link href="https://discord.gg/gZq56qk9c7" target="_blank">
+                          Join ATC24 Main
+                          <ExternalLink className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                  <Card className="bg-slate-800 border-slate-700 text-white relative opacity-75">
-                    <div className="absolute -top-3 -left-3 bg-gray-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                  <Card className="bg-slate-800 border-slate-700 text-white relative">
+                    <div className="absolute -top-3 -left-3 bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                       2
                     </div>
                     <CardHeader>
-                      <CardTitle>Access Game Server</CardTitle>
+                      <CardTitle>Join US Airforce Department</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Once verified in Discord, you'll receive access to our game server connection details and can
-                        begin your military aviation career with ATC24.
+                        Once you're verified in the main ATC24 server, join our specialized US Airforce department to
+                        begin your military aviation career.
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <Button className="w-full bg-gray-600 cursor-not-allowed" disabled>
-                        Requires Discord Verification
-                        <Shield className="ml-2 h-4 w-4" />
+                      <Button className="w-full bg-green-600 hover:bg-green-700" asChild>
+                        <Link href="https://discord.gg/PpqUd4qQEr" target="_blank">
+                          Join US Airforce Dept
+                          <ExternalLink className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardContent>
                   </Card>
                 </div>
 
                 {/* Important notice */}
-                <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-lg p-4 max-w-2xl">
+                <div className="bg-blue-900/20 border border-blue-600/30 rounded-lg p-4 max-w-2xl">
                   <div className="flex items-start gap-3">
-                    <Shield className="h-5 w-5 text-yellow-400 mt-0.5 flex-shrink-0" />
+                    <Shield className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
                     <div className="text-left">
-                      <h4 className="font-semibold text-yellow-400 mb-1">Verification Required</h4>
+                      <h4 className="font-semibold text-blue-400 mb-1">ATC24 Department</h4>
                       <p className="text-sm text-gray-300">
-                        All members must be verified through our Discord server before gaining access to the game
-                        server. This ensures our community maintains high standards and authentic roleplay experiences.
+                        We are a specialized US Air Force department within the larger ATC24 community. Join the main
+                        ATC24 server first, then our department for focused military aviation roleplay.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="text-sm text-gray-400">
-                  <p>Discord: discord.gg/atc24 | Teamspeak: ts.atc24.airforce</p>
-                  <p className="text-xs mt-1">Game server details provided after Discord verification</p>
+                  <p>Main ATC24: discord.gg/gZq56qk9c7 | US Airforce Dept: discord.gg/PpqUd4qQEr</p>
+                  <p className="text-xs mt-1">Game server details provided after verification in both servers</p>
                 </div>
               </div>
             </div>
