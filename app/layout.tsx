@@ -18,7 +18,11 @@ export default function RootLayout({
     </html>
   )
 }
-export const metadata = {
-  title: 'ATC24 US Airforce - Elite Military Aviation Roleplay',
-  description: 'Experience authentic military aviation roleplay with professional air traffic control and realistic operations.'
-}
+
+import Head from 'next/head'
+
+// Inside your component:
+<Head>
+  <title>ATC24 | US Airforce</title>
+  <meta name="description" content="Experience authentic military aviation roleplay..." />
+</Head>
