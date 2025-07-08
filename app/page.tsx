@@ -56,17 +56,7 @@ export default function HomePage() {
                     Join Server
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
-                    asChild
-                  >
-                    <Link href="https://careers.usaf24.com" target="_blank">
-                      View Careers
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-300">
                   <div className="flex items-center gap-1">
