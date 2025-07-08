@@ -19,10 +19,25 @@ export default function RootLayout({
   )
 }
 
-import Head from 'next/head'
+// app/layout.tsx
+import type { Metadata } from 'next'
 
-// Inside your component:
-<Head>
-  <title>ATC24 | US Airforce</title>
- 
-</Head>
+// Add this metadata export
+export const metadata: Metadata = {
+  title: 'ATC24 | US Airforce',
+  description: 'Elite Military Aviation Roleplay'
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+      </body>
+    </html>
+  )
+}
