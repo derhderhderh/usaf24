@@ -24,5 +24,5 @@ import Head from 'next/head'
 // Inside your component:
 <Head>
   <title>ATC24 | US Airforce</title>
-  <meta name="description" content="Experience authentic military aviation roleplay..." />
+ 
 </Head>
